@@ -9,8 +9,16 @@ Provides Quote Blocks for the [Editor.js](https://editorjs.io).
 
 ### Download to your project's source dir
 
-1. Upload folder `dist` from repository
-2. Add `dist/bundle.js` file to your page.
+Download the repo and build using Node:
+
+```shell
+git clone https://github.com/RobinBoers/editorjs-quote
+npm i
+npm run build
+```
+
+1. Move `dist` folder to your project
+2. Add `dist/bundle.js` file to your page
 
 ### Load from CDN
 
