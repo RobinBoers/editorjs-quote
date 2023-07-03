@@ -1,26 +1,11 @@
-![](https://badgen.net/badge/Editor.js/v2.0/blue)
-
 # Quote Tool
 
 Provides Quote Blocks for the [Editor.js](https://editorjs.io).
 
-![](https://capella.pics/017dca46-6869-40cb-93a0-994416576e33.jpg)
+> **Warning:**  
+> This is a fork of the upstream repository, that removes the alignment options, because I already handle alignment using https://github.com/kaaaaaaaaaaai/editorjs-alignment-blocktune, and the two options conflicted. If you want the most up-to-date version of the plugin, or you do need the alignment options, please use the [upstream](https://github.com/editor-js/quote) repo instead.
 
 ## Installation
-
-### Install via NPM
-
-Get the package
-
-```shell
-npm i --save-dev @editorjs/quote
-```
-
-Include module at your application
-
-```javascript
-const Quote = require('@editorjs/quote');
-```
 
 ### Download to your project's source dir
 
@@ -86,19 +71,12 @@ var editor = EditorJS({
 | quotePlaceholder   | `string` | quote's placeholder string  |
 | captionPlaceholder | `string` | caption's placeholder string|
 
-## Tool's settings
-
-![](https://capella.pics/0db5d4de-c431-4cc2-90bf-bb1f4feec5df.jpg)
-
-You can choose alignment for the quote. It takes no effect while editing, but saved the «alignment» param.
-
 ## Output data
 
 | Field     | Type     | Description          |
 | --------- | -------- | -------------------- |
 | text      | `string` | quote's text         |
 | caption   | `string` | caption or an author |
-| alignment | `string` | `left` or `center`   |
 
 
 ```json
@@ -106,8 +84,7 @@ You can choose alignment for the quote. It takes no effect while editing, but sa
     "type" : "quote",
     "data" : {
         "text" : "The unexamined life is not worth living.",
-        "caption" : "Socrates",
-        "alignment" : "left"
+        "caption" : "Socrates"
     }
 }
 ```
